@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>JavaEE Project6</display-name>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+
+
+<!-- 定义一个Servlet名称以及对应的类路径 -->
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>servlet.AdminServlet</servlet-class>
+  </servlet>
+  <!-- 定义Servlet对应的URL， http://localhost:8080/JavaEE Project6/adminservlet -->
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/adminservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GraduateServlet</servlet-name>
+    <servlet-class>servlet.GraduateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GraduateServlet</servlet-name>
+    <url-pattern>/graduateservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TutorServlet</servlet-name>
+    <servlet-class>servlet.TutorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TutorServlet</servlet-name>
+    <url-pattern>/tutorservlet</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <servlet-name>NoticeServlet</servlet-name>
+    <servlet-class>servlet.NoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NoticeServlet</servlet-name>
+    <url-pattern>/noticeservlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>MajorServlet</servlet-name>
+    <servlet-class>servlet.MajorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MajorServlet</servlet-name>
+    <url-pattern>/majorservlet</url-pattern>
+  </servlet-mapping>
+ 
+  
+</web-app>
